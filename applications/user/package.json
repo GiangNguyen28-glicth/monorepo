@@ -1,6 +1,6 @@
 {
   "name": "@dark/user",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "scripts": {
     "build": "rimraf -rf dist && nest build -p tsconfig.json",
@@ -9,5 +9,5 @@
     "start": "node dist/main.js"
   },
   "license": "MIT",
-  "gitHead": "9eeeeac6cde2e64ab37bc44e13bda38079768b97"
+  "gitHead": "8619fd81e6b4d810de481bcefc75baf119b7821e"
 }
