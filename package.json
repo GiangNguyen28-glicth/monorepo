@@ -2,7 +2,7 @@
   "name": "monorepo",
   "version": "1.0.0",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "lerna run build",
     "dev": "lerna run --parallel dev",
