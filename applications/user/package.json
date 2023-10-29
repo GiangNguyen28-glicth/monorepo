@@ -1,6 +1,6 @@
 {
   "name": "@monorepo/user",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": false,
   "scripts": {
     "build": "rimraf -rf dist && nest build -p tsconfig.json",
