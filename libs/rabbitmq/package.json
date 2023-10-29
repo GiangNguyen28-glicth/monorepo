@@ -1,5 +1,5 @@
 {
-  "name": "@dark/rabbitmq",
+  "name": "@monorepo/rabbitmq",
   "version": "1.0.6",
   "license": "MIT",
   "main": "dist/index",

@@ -1,5 +1,5 @@
 {
-  "name": "@dark/user",
+  "name": "@monorepo/user",
   "version": "1.0.6",
   "private": false,
   "scripts": {

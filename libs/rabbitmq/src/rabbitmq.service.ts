@@ -14,7 +14,6 @@ export class RabbitService implements OnModuleInit, OnModuleDestroy {
   private channelName: string;
 
   onModuleDestroy() {
-    console.log('Close connection');
     this.connection.close();
   }
 
