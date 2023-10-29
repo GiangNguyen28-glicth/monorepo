@@ -1,11 +1,13 @@
 {
   "name": "@dark/user",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "private": false,
   "scripts": {
     "build": "rimraf -rf dist && nest build -p tsconfig.json",
     "prepublishOnly": "yarn build",
     "dev": "nest start --watch -p tsconfig.json",
     "start": "node dist/main.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "e73339e0b9fbbf694f30f2ff7fc8d187b7e5c342"
 }
