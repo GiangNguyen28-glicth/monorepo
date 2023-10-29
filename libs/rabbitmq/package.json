@@ -1,6 +1,6 @@
 {
   "name": "@dark/rabbitmq",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "main": "dist/index",
   "types": "dist/index",
@@ -16,5 +16,5 @@
     "dev:test": "jest --watch",
     "dep:upgrade": "ncu -p yarn -f /^@ynm*/ -u"
   },
-  "gitHead": "8619fd81e6b4d810de481bcefc75baf119b7821e"
+  "gitHead": "f9e810f04b4f77d3af29059d0078faab4481224e"
 }
