@@ -93,7 +93,7 @@ let RabbitService = class RabbitService {
             await hook(channelId);
         }
     }
-    getContentFromMessage(msg) {
+    getContent(msg) {
         return JSON.parse(msg.content.toString());
     }
     setChannelName(channelName) {

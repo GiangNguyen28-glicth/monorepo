@@ -18,6 +18,6 @@ export declare class RabbitService implements OnModuleInit, OnModuleDestroy {
     reject(msg: ConsumeMessage, requeue?: boolean, channelId?: string): Promise<void>;
     pushToHooks(channelId: string, hook: () => Promise<void>): Promise<void>;
     startConsuming(channelId?: string): Promise<void>;
-    getContentFromMessage(msg: ConsumeMessage): any;
+    getContent(msg: ConsumeMessage): any;
     setChannelName(channelName: string): void;
 }

@@ -109,7 +109,7 @@ export class RabbitService implements OnModuleInit, OnModuleDestroy {
     }
   }
 
-  getContentFromMessage(msg: ConsumeMessage) {
+  getContent(msg: ConsumeMessage) {
     return JSON.parse(msg.content.toString());
   }
 

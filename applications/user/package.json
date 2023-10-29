@@ -9,5 +9,5 @@
     "start": "node dist/main.js"
   },
   "license": "MIT",
-  "gitHead": "f9e810f04b4f77d3af29059d0078faab4481224e"
+  "gitHead": "9b0ae6dcf41e831c21aad5897eafb5f3dd3b4173"
 }
