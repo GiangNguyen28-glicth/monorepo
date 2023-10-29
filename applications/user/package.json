@@ -1,6 +1,6 @@
 {
   "name": "@dark/user",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "rimraf -rf dist && nest build -p tsconfig.json",
     "prepublishOnly": "yarn build",
@@ -8,8 +8,7 @@
     "start": "node dist/main.js"
   },
   "dependencies": {
-    "@dark/rabbitmq": "1.0.0"
+    "@dark/rabbitmq": "^1.0.1"
   },
-  "peerDependencies": {},
   "license": "MIT"
 }
