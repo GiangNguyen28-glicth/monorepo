@@ -16,5 +16,5 @@
     "dev:test": "jest --watch",
     "dep:upgrade": "ncu -p yarn -f /^@ynm*/ -u"
   },
-  "gitHead": "0de8ea6ff3f0512ddc16280f2981275ec660128d"
+  "gitHead": "81795f21ba84ca0609b31d6020a9c97d82c61213"
 }

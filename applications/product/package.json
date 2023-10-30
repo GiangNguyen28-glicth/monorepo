@@ -1,6 +1,6 @@
 {
-  "name": "@monorepo/user",
-  "version": "1.0.9",
+  "name": "@monorepo/product",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "rimraf -rf dist && nest build -p tsconfig.json",
@@ -8,7 +8,10 @@
     "dev": "nest start --watch -p tsconfig.json",
     "start": "node dist/main.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@monorepo/rabbitmq": "1.0.9",
+    "@monorepo/redis": "1.0.0"
+  },
   "license": "MIT",
   "gitHead": "81795f21ba84ca0609b31d6020a9c97d82c61213"
 }
