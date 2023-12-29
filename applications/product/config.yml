@@ -1,0 +1,22 @@
+http:
+  host: 'localhost'
+  port: 8080
+
+rabbit:
+  protocol: amqp
+  hostname: localhost
+  username: guest
+  password: guest
+  port: 5672
+  heartbeat: 1
+  retry:
+    # forever: true
+    retries: 5
+    factor: 1
+    minTimeout: 3000
+    maxTimeout: 20000
+
+aiBrandRetraining:
+  type: AI_BRAND_RETRAINING
+  enable: true
+  concurrent: 1

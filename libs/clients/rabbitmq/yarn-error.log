@@ -14,22 +14,30 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EBUSY: resource busy or locked, copyfile 'C:\Users\diepn\AppData\Local\Yarn\Cache\v6\npm-cli-spinners-2.6.1-integrity\node_modules\cli-spinners\license' -> 'E:\microservices\monorepo\node_modules\nx\node_modules\cli-spinners\license'
+  Error: EBUSY: resource busy or locked, copyfile 'C:\Users\diepn\AppData\Local\Yarn\Cache\v6\npm-mime-2.6.0-integrity\node_modules\mime\CHANGELOG.md' -> 'E:\microservices\monorepo\node_modules\superagent\node_modules\mime\CHANGELOG.md'
 
 npm manifest: 
   {
-    "name": "@monorepo/user",
+    "name": "@giangnt3246/rabbitmq",
     "version": "1.0.10",
-    "private": true,
+    "license": "MIT",
+    "main": "dist/index",
+    "types": "dist/index",
+    "private": false,
+    "files": [
+      "dist"
+    ],
     "scripts": {
+      "dev": "nest build --watch -p tsconfig.json",
       "build": "rimraf -rf dist && nest build -p tsconfig.json",
       "prepublishOnly": "yarn build",
-      "dev": "nest start --watch -p tsconfig.json",
-      "start": "node dist/main.js"
+      "test": "jest --passWithNoTests --coverage",
+      "dev:test": "jest --watch",
+      "dep:upgrade": "ncu -p yarn -f /^@ynm*/ -u"
     },
-    "license": "MIT",
-    "gitHead": "81795f21ba84ca0609b31d6020a9c97d82c61213",
+    "gitHead": "a39e46b55a383240caa824735dade1c55a05f570",
     "dependencies": {
+      "js-yaml": "^4.1.0",
       "lodash": "^4.17.21"
     }
   }

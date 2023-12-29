@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Product Service",
+      "cwd": "${workspaceFolder}",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["dev", "--scope=@monorepo/product"],
+      "sourceMaps": true,
+      "console": "integratedTerminal",
+      "restart": true,
+      "autoAttachChildProcesses": true
+    }
+  ]
+}

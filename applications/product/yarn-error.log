@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\diepn\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add lodash
+  C:\Program Files\nodejs\node.exe C:\Users\diepn\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @giangnt3246/common
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Kubernetes\Minikube;C:\Program Files\nodejs\;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\diepn\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\diepn\AppData\Local\Programs\Python\Python310\;C:\Users\diepn\AppData\Local\Microsoft\WindowsApps;C:\Users\diepn\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\diepn\.fly\bin;E:\APP\windows-amd64;E:\APP\kubnectl;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\MongoDB\Server\6.0\bin\;C:\Users\diepn\AppData\Roaming\npm
@@ -14,24 +14,36 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EBUSY: resource busy or locked, copyfile 'C:\Users\diepn\AppData\Local\Yarn\Cache\v6\npm-cli-spinners-2.6.1-integrity\node_modules\cli-spinners\license' -> 'E:\microservices\monorepo\node_modules\nx\node_modules\cli-spinners\license'
+  Error: https://registry.yarnpkg.com/@giangnt3246%2fcommon: Not found
+      at Request.params.callback [as _callback] (C:\Users\diepn\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at Request.self.callback (C:\Users\diepn\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\diepn\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\diepn\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
-    "name": "@monorepo/user",
-    "version": "1.0.10",
-    "private": true,
+    "name": "@monorepo/product",
+    "version": "1.0.1",
     "scripts": {
       "build": "rimraf -rf dist && nest build -p tsconfig.json",
       "prepublishOnly": "yarn build",
       "dev": "nest start --watch -p tsconfig.json",
       "start": "node dist/main.js"
     },
-    "license": "MIT",
-    "gitHead": "81795f21ba84ca0609b31d6020a9c97d82c61213",
     "dependencies": {
+      "@giangnt3246/rabbitmq": "^1.0.10",
+      "@giangnt3246/redis": "^1.0.1",
       "lodash": "^4.17.21"
-    }
+    },
+    
+    "license": "MIT",
+    "gitHead": "81795f21ba84ca0609b31d6020a9c97d82c61213"
   }
 
 yarn manifest: 

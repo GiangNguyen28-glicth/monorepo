@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/rabbitmq",
+  "name": "@giangnt3246/rabbitmq",
   "version": "1.0.10",
   "license": "MIT",
   "main": "dist/index",
@@ -16,5 +16,9 @@
     "dev:test": "jest --watch",
     "dep:upgrade": "ncu -p yarn -f /^@ynm*/ -u"
   },
-  "gitHead": "81795f21ba84ca0609b31d6020a9c97d82c61213"
+  "gitHead": "a39e46b55a383240caa824735dade1c55a05f570",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
+  }
 }

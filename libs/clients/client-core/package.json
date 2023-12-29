@@ -1,0 +1,24 @@
+{
+  "name": "@giangnt3246/client-core",
+  "version": "1.0.1",
+  "license": "MIT",
+  "main": "dist/index",
+  "types": "dist/index",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "nest build --watch -p tsconfig.json",
+    "build": "rimraf -rf dist && nest build -p tsconfig.json",
+    "prepublishOnly": "yarn build",
+    "test": "jest --passWithNoTests --coverage",
+    "dev:test": "jest --watch",
+    "dep:upgrade": "ncu -p yarn -f /^@ynm*/ -u"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "@giangnt3246/common": "^1.0.1"
+  }
+}

@@ -24,9 +24,9 @@ export class RedisService {
   }
 
   async setex(redisSet: IRedisSet): Promise<string> {
-    const { ttl, key, data } = redisSet;
+    const { ttl, key, value } = redisSet;
     return new Promise((resolve, reject) => {
-      this.redisClient.set(key, data, 'EX', ttl, err => {
+      this.redisClient.set(key, value, 'EX', ttl, err => {
         if (err) {
           reject(err);
         }

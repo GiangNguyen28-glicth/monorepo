@@ -1,5 +1,5 @@
 {
-  "packages": ["libs/*", "applications/*"],
+  "packages": ["libs/**/*", "applications/**/*"],
   "command": {
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md", "**/k8s/**", "**/import_files/**", "**/export_files/**"],
@@ -12,5 +12,6 @@
     }
   },
   "version": "independent",
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }

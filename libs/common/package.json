@@ -1,6 +1,7 @@
 {
-  "name": "@giangnt3246/redis",
+  "name": "@giangnt3246/common",
   "version": "1.0.1",
+  "private": true,
   "description": "> TODO: description",
   "author": "GiangNguyen28-glicth <giangnguyen3246>",
   "homepage": "https://github.com/GiangNguyen28-glicth/monorepo#readme",

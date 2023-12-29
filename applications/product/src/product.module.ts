@@ -1,8 +1,8 @@
+import { RabbitMQModule } from '@giangnt3246/rabbitmq';
 import { Module } from '@nestjs/common';
-import { RabbitModule } from '@monorepo/rabbitmq';
 import { ProductController } from './product.controller';
 @Module({
-  imports: [RabbitModule],
+  imports: [RabbitMQModule],
   controllers: [ProductController],
 })
 export class ProductModule {}
